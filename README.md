@@ -108,6 +108,36 @@ Additionally, you need to authenticate and initialize the Earth Engine API by ru
 
 5. Observe the output visualizations and analysis results as described in the code comments.
 
+---
+
+## 2. Compute and Visualize the Gradient Magnitude of the Smoothed Earth Engine's DEM
+
+This section calculates the gradient magnitude of the smoothed DEM using both mean and Gaussian filters and then visualizes the results.
+
+### Compute and Visualize the Gradient Direction of the Smoothed Earth Engine's DEM
+
+Here, the code calculates the gradient direction of the smoothed DEM using a mean filter. It visualizes the gradient direction using arrows and a normalized gradient direction map.
+
+### Compute and Visualize the Respective Histograms of Each Color and All Colors Combined of the Smoothed Earth Engine's DEM
+
+This part focuses on computing and visualizing histograms of the gradient direction for individual color channels (red, green, and blue) and a combined histogram for all colors. It provides insights into the distribution of gradient direction values.
+
+### Compute and Visualize the Gradient Magnitude, Gradient Direction, and Respective Histograms of the USGS DEM
+
+This section deals with a different DEM dataset (USGS DEM). It performs similar operations as previous sections, including smoothing, gradient magnitude, gradient direction computation, and histograms. It allows you to compare these results with those of the Earth Engine's DEM.
+
+### Compute and Visualize the Gradient Magnitude, Gradient Direction, and Respective Histograms of the Hilly Terrain
+
+Similar to the previous section, this part works with another terrain dataset (Hilly Terrain). It calculates gradient magnitude, gradient direction, and respective histograms. This can be useful for analyzing different types of terrain.
+
+---
+
+You can run these code sections as needed and adjust parameters to suit your specific analysis. Each section provides insights into the gradient properties and distribution of elevation data. Please feel free to reach out if you have any questions or need further assistance.
+
+---
+
+Please replace `[Your Name/Email]` with your contact information. You can save this README in a separate text file, such as `README.txt`, for clear documentation of your code, including the new sections.
+
 
 ## References
 
