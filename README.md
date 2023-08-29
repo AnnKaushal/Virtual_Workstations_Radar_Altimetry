@@ -61,11 +61,17 @@ We undertake a series of multiple steps and side steps to estimate river width f
 ## References
 
 Berry, P. A. M. (2006) Two decades of inland water monitoring using satellite radar altimetry In: 15 Years of Progress in Radar Altimetry (Proc. Symp., Venice Lido, Italy, 13–18 March 2006). European Space Agency Special Publ. ESA SP614. ESA, Noordwijk, The Netherlands.
+
 Chelton, D. B., Ries, J. C., Haines, B. J., Fu, L. & Callahan, P. S. (2001) Satellite altimetry. In: Satellite Altimetry and Earth Sciences: A Handbook of Techniques and Applications (ed. by J. Fu & A. Cazenave). Academic Press, San Diego, California, USA.
+
 Roux, E., Santos da Silva, J., Vieira Getirana, A. C., Bonnet, M.-P., Calmant, S., Martinez, J.-M. & Seyler, F. (2010) Producing time series of river water height by means of satellite radar altimetry—comparative study. Hydrol. Sci. J. 55(1), 104–120.
+
 Flow computation on massive grids. Lars Arge, Jeffrey S. Chase, Patrick N. Halpin, Laura Toma, Jeffrey S. Vitter, Dean Urban and Rajiv Wickremesinghe. In Proc. ACM Symposium on Advances in Geographic Information Systems, 2001.
+
 GRASS Development Team (2006) Geographic Resources Analysis Support System (GRASS) Software. ITC-irst, Trento, Italy. http://grass.itc.it.
+
 Berry, P. A. M., Garlick, J. D., Freeman, J. A. & Mathers, E. L. (2005) Global inland water monitoring from multi-mission altimetry. Geophys. Res. Lett. 32(L16401), 1–4.
+
 Saunders, W. (1999) Preparation of DEMs for use in environmental modeling analysis. ESRI User Conference (24–30 July 1999, San Diego, California). Available at: http://proceedings.esri.com/library/userconf/proc99/navigate/proceed.htm
 
 
