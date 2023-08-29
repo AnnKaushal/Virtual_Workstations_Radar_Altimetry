@@ -8,9 +8,13 @@ This research project is a part of my IIT Kanpur's Summer Research Internship pr
 1. Abstract
 2. Acknowledgment
 3. Principle of Satellite Radar Altimetry
-4. River width estimation
-5. River network extraction
-6. Finding intersection points.
+4. Methodology 
+5. Estimating Virtual Station's Location
+6. Compute and Visualize the Gradient Magnitude of the Smoothed Earth Engine's DEM
+7. Smoothening the Digital Elevation Model (DEM) for Yamuna River near Kalpi, UP
+8. Processing Geospatial Data for Hydrological Analysis
+9. References
+
 
 ## Abstract
 
@@ -114,15 +118,15 @@ Additionally, you need to authenticate and initialize the Earth Engine API by ru
 
 This section calculates the gradient magnitude of the smoothed DEM using both mean and Gaussian filters and then visualizes the results.
 
-### Compute and Visualize the Gradient Direction of the Smoothed Earth Engine's DEM
+## Compute and Visualize the Gradient Direction of the Smoothed Earth Engine's DEM
 
 Here, the code calculates the gradient direction of the smoothed DEM using a mean filter. It visualizes the gradient direction using arrows and a normalized gradient direction map.
 
-### Compute and Visualize the Respective Histograms of Each Color and All Colors Combined of the Smoothed Earth Engine's DEM
+## Compute and Visualize the Respective Histograms of Each Color and All Colors Combined of the Smoothed Earth Engine's DEM
 
 This part focuses on computing and visualizing histograms of the gradient direction for individual color channels (red, green, and blue) and a combined histogram for all colors. It provides insights into the distribution of gradient direction values.
 
-### Compute and Visualize the Gradient Magnitude, Gradient Direction, and Respective Histograms of the USGS DEM
+## Compute and Visualize the Gradient Magnitude, Gradient Direction, and Respective Histograms of the USGS DEM
 
 This section deals with a different DEM dataset (USGS DEM). It performs similar operations as previous sections, including smoothing, gradient magnitude, gradient direction computation, and histograms. It allows you to compare these results with those of the Earth Engine's DEM.
 
@@ -136,7 +140,7 @@ Similar to the previous section, this part works with another terrain dataset (H
 
 After obtaining the Digital Elevation Model (DEM) data for the Yamuna River near Kalpi, Uttar Pradesh, the next step is to smoothen the DEM to reduce noise and enhance the visualization of the terrain. Smoothing the DEM can improve the quality of subsequent analyses, such as identifying river channels and drainage networks. In this section, we'll use a bilateral filter to achieve edge-preserving smoothing of the DEM.
 
-#### Steps to Smoothen the DEM:
+## Steps to Smoothen the DEM:
 
 1. **Read the DEM Data**: First, we read the elevation data from the DEM file using the `rasterio` library.
 
@@ -158,39 +162,39 @@ Smoothening the DEM is a crucial preprocessing step that can significantly impro
 
 This section of the README file discusses the code and processes used for working with geospatial data related to hydrology, particularly focusing on river networks and associated attributes.
 
-### Overview
+## Overview
 
 The code provided here aims to process geospatial data related to hydrology, such as river networks, flow accumulation, and flow direction. It also deals with the extraction of river network attributes and visualization of hydrological features. Below is a brief description of the key steps and processes:
 
-### 1. Thresholding for River Network Extraction
+## 1. Thresholding for River Network Extraction
 
 The first step involves applying thresholding to the flow accumulation data to extract the river network. A threshold value is chosen, and pixels with flow accumulation values above this threshold are considered part of the river network. This thresholding helps identify the main river channels within the dataset.
 
-### 2. Logarithmic Scaling of Flow Accumulation
+## 2. Logarithmic Scaling of Flow Accumulation
 
 In this step, the logarithm of the flow accumulation values is computed to visualize the data on a logarithmic scale. This can be useful for highlighting areas with higher flow accumulation, which may correspond to larger river channels or basins.
 
-### 3. Contour Extraction
+## 3. Contour Extraction
 
 Contours are extracted from the binary image obtained after thresholding. These contours represent the river network's boundaries. The code simplifies the contours to reduce the number of vertices while maintaining the network's overall shape.
 
-### 4. Shapefile Data Processing
+## 4. Shapefile Data Processing
 
 The code also demonstrates how to work with shapefiles (.shp) for hydrological analysis. It reads a shapefile that contains information about hydrological features, including attributes and geometries.
 
-### 5. Visualization
+## 5. Visualization
 
 The final section focuses on visualizing the river network and related hydrological features. It includes plots and maps that help users understand the spatial distribution of rivers and their attributes.
 
-### Usage
+## Usage
 
 To use this code, you will need relevant geospatial data files such as flow accumulation, flow direction, and shapefiles containing hydrological data. Ensure you have the necessary libraries and dependencies installed to run the code successfully.
 
-### Data Sources
+## Data Sources
 
 The code assumes the availability of geospatial data files, which may include GeoTIFFs, shapefiles, and NetCDF files. These data sources are used for various processing steps and visualization.
 
-### Additional Notes
+## Additional Notes
 
 This code serves as a starting point for hydrological analysis. Depending on your specific research or analysis goals, you may need to customize and extend it to suit your needs.
 
