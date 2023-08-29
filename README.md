@@ -59,7 +59,7 @@ We undertake a series of multiple steps and side steps to estimate river width f
 
 ---
 
-# Estimating Virtual Station's Location
+## 1. Estimating Virtual Station's Location
 
 ## Overview
 This code aims to estimate the location of a virtual station using elevation data from the Shuttle Radar Topography Mission (SRTM) dataset and various geospatial tools. It covers several tasks, including importing elevation data, processing it, and visualizing the results.
