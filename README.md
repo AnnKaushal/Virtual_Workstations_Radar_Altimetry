@@ -8,10 +8,9 @@ This research project is a part of my IIT Kanpur's Summer Research Internship pr
 1. Abstract
 2. Acknowledgment
 3. Principle of Satellite Radar Altimetry
-4. Methodology 
- 4.1. River width estimation
- 4.2. River network extraction.
- 4.3. Finding intersection points.
+4. River width estimation
+5. River network extraction
+6. Finding intersection points.
 
 ## Abstract
 
@@ -58,6 +57,58 @@ The process can be broadly divided into 2 segments:
 
 We undertake a series of multiple steps and side steps to estimate river width from satellite data and extract the river's drainage network using Python code and QGIS software. The resulting datasets obtained are used to compute optimal location of valid intersection points. The details of each step are mentioned in the SURGE project report file. Please read the report for detailed visual explanation.
 
+---
+
+# Estimating Virtual Station's Location
+
+## Overview
+This code aims to estimate the location of a virtual station using elevation data from the Shuttle Radar Topography Mission (SRTM) dataset and various geospatial tools. It covers several tasks, including importing elevation data, processing it, and visualizing the results.
+
+## Prerequisites
+Before running this code, please ensure that you have the following libraries and tools installed:
+
+- Python
+- Earth Engine Python API
+- NumPy
+- Pandas
+- SciPy
+- Matplotlib
+- Rasterio
+- Scikit-image
+
+Additionally, you need to authenticate and initialize the Earth Engine API by running `ee.Authenticate()` and `ee.Initialize()`.
+
+## Code Sections
+1. **Import Necessary Libraries and Packages**: This section imports the required Python libraries.
+
+2. **Get the Earth Engine's DEM Elevation Band Information in a DataFrame**: Retrieves elevation data from the SRTM dataset using the Earth Engine API and displays relevant information in a DataFrame.
+
+3. **Display the SRTM DEM Dataset's Info Obtained from USGS**: Loads elevation data from a GeoTIFF file and displays its metadata.
+
+4. **Print the Elevation Array of the Earth Engine's DEM Dataset for Ganga River**: Extracts elevation data for a specific geographic area and prints the elevation values.
+
+5. **Plot the Elevation Profile of the Earth Engine's Elevation Dataset**: This section plots an elevation profile and calculates statistics like minimum, maximum, mean, median, and standard deviation of the elevation data.
+
+6. **Plot the Heatmap and 3D Surface of the Earth Engine's Elevation Dataset**: Creates a heatmap and 3D surface plot of the elevation data.
+
+7. **Apply Gaussian Filter to Smoothen the Earth Engine's DEM**: Applies a Gaussian filter to smooth the elevation data and visualizes the results.
+
+8. **Apply Mean Filter to Smoothen the Earth Engine's DEM**: Demonstrates the application of a mean filter to smooth the elevation data.
+
+9. **Apply Bilateral Filter to Smoothen the Earth Engine's DEM**: This section applies a bilateral filter for edge-preserving smoothing of the elevation data.
+
+## Usage
+1. Ensure you have the required libraries and tools installed as mentioned in the prerequisites.
+
+2. Authenticate and initialize the Earth Engine API using `ee.Authenticate()` and `ee.Initialize()`.
+
+3. Run the code sections as needed based on your requirements. You can copy and paste individual sections into your Python environment.
+
+4. Adjust parameters and input data paths as necessary.
+
+5. Observe the output visualizations and analysis results as described in the code comments.
+
+
 ## References
 
 Berry, P. A. M. (2006) Two decades of inland water monitoring using satellite radar altimetry In: 15 Years of Progress in Radar Altimetry (Proc. Symp., Venice Lido, Italy, 13–18 March 2006). European Space Agency Special Publ. ESA SP614. ESA, Noordwijk, The Netherlands.
@@ -73,6 +124,12 @@ GRASS Development Team (2006) Geographic Resources Analysis Support System (GRAS
 Berry, P. A. M., Garlick, J. D., Freeman, J. A. & Mathers, E. L. (2005) Global inland water monitoring from multi-mission altimetry. Geophys. Res. Lett. 32(L16401), 1–4.
 
 Saunders, W. (1999) Preparation of DEMs for use in environmental modeling analysis. ESRI User Conference (24–30 July 1999, San Diego, California). Available at: http://proceedings.esri.com/library/userconf/proc99/navigate/proceed.htm
+
+For any questions or issues, please contact 20bce034@nith.ac.in.
+
+Enjoy exploring and analyzing elevation data!
+
+---
 
 
 
