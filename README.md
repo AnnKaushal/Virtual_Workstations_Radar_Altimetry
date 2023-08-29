@@ -132,6 +132,28 @@ Similar to the previous section, this part works with another terrain dataset (H
 
 ---
 
+## 3. Smoothening the Digital Elevation Model (DEM) for Yamuna River near Kalpi, UP
+
+After obtaining the Digital Elevation Model (DEM) data for the Yamuna River near Kalpi, Uttar Pradesh, the next step is to smoothen the DEM to reduce noise and enhance the visualization of the terrain. Smoothing the DEM can improve the quality of subsequent analyses, such as identifying river channels and drainage networks. In this section, we'll use a bilateral filter to achieve edge-preserving smoothing of the DEM.
+
+#### Steps to Smoothen the DEM:
+
+1. **Read the DEM Data**: First, we read the elevation data from the DEM file using the `rasterio` library.
+
+2. **Reshape the Data**: We reshape the elevation data into a matrix format to prepare it for processing.
+
+3. **Normalize the Data**: To ensure consistent processing, we convert the elevation matrix to floating-point values between 0 and 1.
+
+4. **Apply Bilateral Filter**: The main smoothening operation is performed using a bilateral filter from the `scikit-image` library. The bilateral filter is a non-linear filter that smooths the data while preserving important edges and details. We control the range similarity (`sigma_color`) and spatial smoothing (`sigma_spatial`) parameters to achieve the desired level of smoothing.
+
+5. **Display the Results**: Finally, we display both the original DEM and the smoothed DEM side by side for comparison. This visualization helps assess the impact of the smoothening process on the terrain representation.
+
+The choice of `sigma_color` and `sigma_spatial` parameters in the bilateral filter can be adjusted to achieve the desired level of smoothing while preserving important features. It's important to strike a balance between noise reduction and retaining essential topographic information.
+
+Smoothening the DEM is a crucial preprocessing step that can significantly improve the quality of subsequent analyses, such as flow accumulation and river network extraction.
+
+---
+
 ## References
 
 Berry, P. A. M. (2006) Two decades of inland water monitoring using satellite radar altimetry In: 15 Years of Progress in Radar Altimetry (Proc. Symp., Venice Lido, Italy, 13–18 March 2006). European Space Agency Special Publ. ESA SP614. ESA, Noordwijk, The Netherlands.
