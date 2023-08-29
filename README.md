@@ -132,13 +132,6 @@ Similar to the previous section, this part works with another terrain dataset (H
 
 ---
 
-You can run these code sections as needed and adjust parameters to suit your specific analysis. Each section provides insights into the gradient properties and distribution of elevation data. Please feel free to reach out if you have any questions or need further assistance.
-
----
-
-Please replace `[Your Name/Email]` with your contact information. You can save this README in a separate text file, such as `README.txt`, for clear documentation of your code, including the new sections.
-
-
 ## References
 
 Berry, P. A. M. (2006) Two decades of inland water monitoring using satellite radar altimetry In: 15 Years of Progress in Radar Altimetry (Proc. Symp., Venice Lido, Italy, 13–18 March 2006). European Space Agency Special Publ. ESA SP614. ESA, Noordwijk, The Netherlands.
@@ -154,6 +147,10 @@ GRASS Development Team (2006) Geographic Resources Analysis Support System (GRAS
 Berry, P. A. M., Garlick, J. D., Freeman, J. A. & Mathers, E. L. (2005) Global inland water monitoring from multi-mission altimetry. Geophys. Res. Lett. 32(L16401), 1–4.
 
 Saunders, W. (1999) Preparation of DEMs for use in environmental modeling analysis. ESRI User Conference (24–30 July 1999, San Diego, California). Available at: http://proceedings.esri.com/library/userconf/proc99/navigate/proceed.htm
+
+--- 
+
+You can run these code sections as needed and adjust parameters to suit your specific analysis. Each section provides insights into the gradient properties and distribution of elevation data. Please feel free to reach out if you have any questions or need further assistance.
 
 For any questions or issues, please contact 20bce034@nith.ac.in.
 
