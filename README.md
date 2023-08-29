@@ -154,6 +154,50 @@ Smoothening the DEM is a crucial preprocessing step that can significantly impro
 
 ---
 
+## 4. Processing Geospatial Data for Hydrological Analysis
+
+This section of the README file discusses the code and processes used for working with geospatial data related to hydrology, particularly focusing on river networks and associated attributes.
+
+### Overview
+
+The code provided here aims to process geospatial data related to hydrology, such as river networks, flow accumulation, and flow direction. It also deals with the extraction of river network attributes and visualization of hydrological features. Below is a brief description of the key steps and processes:
+
+### 1. Thresholding for River Network Extraction
+
+The first step involves applying thresholding to the flow accumulation data to extract the river network. A threshold value is chosen, and pixels with flow accumulation values above this threshold are considered part of the river network. This thresholding helps identify the main river channels within the dataset.
+
+### 2. Logarithmic Scaling of Flow Accumulation
+
+In this step, the logarithm of the flow accumulation values is computed to visualize the data on a logarithmic scale. This can be useful for highlighting areas with higher flow accumulation, which may correspond to larger river channels or basins.
+
+### 3. Contour Extraction
+
+Contours are extracted from the binary image obtained after thresholding. These contours represent the river network's boundaries. The code simplifies the contours to reduce the number of vertices while maintaining the network's overall shape.
+
+### 4. Shapefile Data Processing
+
+The code also demonstrates how to work with shapefiles (.shp) for hydrological analysis. It reads a shapefile that contains information about hydrological features, including attributes and geometries.
+
+### 5. Visualization
+
+The final section focuses on visualizing the river network and related hydrological features. It includes plots and maps that help users understand the spatial distribution of rivers and their attributes.
+
+### Usage
+
+To use this code, you will need relevant geospatial data files such as flow accumulation, flow direction, and shapefiles containing hydrological data. Ensure you have the necessary libraries and dependencies installed to run the code successfully.
+
+### Data Sources
+
+The code assumes the availability of geospatial data files, which may include GeoTIFFs, shapefiles, and NetCDF files. These data sources are used for various processing steps and visualization.
+
+### Additional Notes
+
+This code serves as a starting point for hydrological analysis. Depending on your specific research or analysis goals, you may need to customize and extend it to suit your needs.
+
+For more details about specific functions and usage, please refer to the code comments and documentation within the provided code files.
+
+---
+
 ## References
 
 Berry, P. A. M. (2006) Two decades of inland water monitoring using satellite radar altimetry In: 15 Years of Progress in Radar Altimetry (Proc. Symp., Venice Lido, Italy, 13–18 March 2006). European Space Agency Special Publ. ESA SP614. ESA, Noordwijk, The Netherlands.
