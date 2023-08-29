@@ -4,7 +4,7 @@
 
 This research project is a part of my IIT Kanpur's Summer Research Internship program conducted by SURGE for the year 2023 under the guidance of my mentor, Dr. Balaji Devaraju. In this project, I try to compute the intersection points between satellite ground track data and the Ganga and Yamuna river bodies in UP, India. These virtual stations are of significant importance in scientific analysis and interpretation related to Earth's topography and hydrological processes.
 
-# Table of Contents
+## Table of Contents
 1. Abstract
 2. Acknowledgment
 3. Principle of Satellite Radar Altimetry
@@ -13,7 +13,7 @@ This research project is a part of my IIT Kanpur's Summer Research Internship pr
  4.2. River network extraction.
  4.3. Finding intersection points.
 
-# Abstract
+## Abstract
 
 Satellite altimetry is among the widely used ocean remote sensing techniques. It measures sea surface topography and offers valuable insights into Earth’s spatial & temporal changes, river dynamics, and soil’s moisture contents. As a means of estimating these changes, we need to first define virtual stations, these being the points of intersection between a water body surface and a satellite ground track. 
 
@@ -25,7 +25,7 @@ Accurate virtual station estimation is important because it provides crucial ref
 
 Keywords used: Satellite altimetry, digital elevation model (DEM), google earth engine (GEE), quantum geographic information system (QGIS) software.
 
-# Acknowledgment
+## Acknowledgment
 
 I would like to express my sincere gratitude to all those who have contributed to the successful completion of this project. Their support, guidance, and encouragement have been invaluable throughout this journey and made this endeavor possible in the first place.
 
@@ -41,7 +41,7 @@ In closing, I would like to acknowledge the trailblazers and visionaries whose g
 
 Thank you all for your contributions.
 
-# Principle of Satellite Radar Altimetry
+## Principle of Satellite Radar Altimetry
 
 The altimeter emits a radar pulse towards the nadir direction (directly below the observer) and measures the time it takes back for the pulse to reflect off the Earth's surface and return to the altimeter. 
 
@@ -49,7 +49,7 @@ By knowing the speed of wave propagation through the traversed medium, the trave
 
 However, practical measurements require various corrections to account for atmospheric disturbances, ionosphere effects, and solid and liquid earth tides.
 
-# Methodology
+## Methodology
 
 The process can be broadly divided into 2 segments:
 1. River Width Estimation.
